@@ -2,7 +2,7 @@ version: '2'
 
 services:
   redis-test:
-    image: lastest
+    image: redistest:lastest
     links:
       - "redis-primary:redisprimary"
       - "redis-secondary:redissecondary"
