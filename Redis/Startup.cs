@@ -13,8 +13,8 @@ namespace Redis
 		// For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
 		public void ConfigureServices(IServiceCollection services)
 		{
-			var redisReadWriteHosts = new List<string> {"localhost:6379"};
-			var redisReadOnlyHosts = new List<string> {"localhost:6378"};
+			var redisReadWriteHosts = new List<string> {"redisprimary:6379"};
+			var redisReadOnlyHosts = new List<string> {"redissecondary:6379"};
 			var pooledRedisClientManager = new PooledRedisClientManager(redisReadWriteHosts, redisReadOnlyHosts,
 				new RedisClientManagerConfig
 				{

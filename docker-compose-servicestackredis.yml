@@ -1,6 +1,13 @@
 version: '2'
 
 services:
+  redis-test:
+    image: lastest
+    links:
+      - "redis-primary:redisprimary"
+      - "redis-secondary:redissecondary"
+    ports:
+      - '80:80'
   redis-primary:
     image: 'docker.io/bitnami/redis:6.2-debian-10'
     ports:

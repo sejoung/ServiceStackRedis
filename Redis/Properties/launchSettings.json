@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "RedisTest": {
+    "Redis": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

@@ -1,6 +1,6 @@
 # ServiceStackRedis
 
 ```
-docker-compose -f docker-compose-replicaset.yml -d up
+docker-compose -f .\docker-compose-servicestackredis.yml up -d
 ```
 
